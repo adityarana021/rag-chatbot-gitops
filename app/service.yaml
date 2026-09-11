@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: rag-chatbot
+  namespace: rag-chatbot
+spec:
+  type: LoadBalancer
+  selector:
+    app: rag-chatbot
+  ports:
+    - port: 80
+      targetPort: 8501
+      protocol: TCP
