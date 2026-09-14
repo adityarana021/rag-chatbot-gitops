@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: rag-chatbot
-          image: 127372371582.dkr.ecr.us-east-1.amazonaws.com/rag-chatbot:build-4
+          image: 127372371582.dkr.ecr.us-east-1.amazonaws.com/rag-chatbot:build-8
           ports:
             - containerPort: 8501
           env:
